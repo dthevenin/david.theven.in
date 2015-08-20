@@ -151,6 +151,7 @@ li {
   max-width: 980px;
   position: relative;
   margin: 0 auto;
+  color: white;
 }
 
 #head_intro h1 {
@@ -196,14 +197,14 @@ li {
 
 #example_gl_ui_1 {
   width: 150px;
-  top: 100px;
+  top: 0px;
   right: 115px;
   opacity: 0.8;
 }
 
 #example_gl_ui_2 {
   width: 150px;
-  top: 100px;
+  top: 0px;
   right: 220px;
   opacity: 0.9;
 }
