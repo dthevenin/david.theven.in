@@ -34,15 +34,47 @@
 
     <article id="head_intro">
       <section>
-        <h1>GL UI<small>, a study about how to implement responsive HTML UI using WebGL</small></h1>
-        <h2>This toolkit was created to easily develop Hybrid Applications for mobile devices<br />
-        <small>For WebApp others solutions exit</small></h2>
+        <h1>GL UI<small>, response HTML UI</small></h1>
+        The GL UI toolkit, is a study about how to implement responsives HTML UI using WebGL.
+
+      </section>
+      <section>
         <img id="example_gl_ui_1" src="assets/gl_ui_1.jpg"></img>
         <img id="example_gl_ui_2" src="assets/gl_ui_2.jpg"></img>
       </section>
+    </article>
 
-      <section id="intro_menu">
-      </section>
+    <article>
+    <section>
+      Designing a responsive HTML UI with nice animations and that can run with the same performance on almost all devices, is still a big challenge. From my perspective the main problems are:
+      <p>
+<li>The HTML DOM does not fit with the UI development requirements
+<li>The developer have very poor control on how / when the rendering will be done
+<li>The rendering performances still depend a lot on the vendor, specially on Android Devices (but that’s changing)
+</p>
+
+The idea of this study is to create a UI Engine based on WebGL.
+    </section>
+
+<section>
+<h4>Why a new UI Engine:</h4>
+<p>
+<li>This new toolkit will propose a DOM with a better API for UI development
+<li>Because we control the rendering process, the UI Engine will offer to the developer all methods he need to know what happening. For instance methods such as viewDidRender, animationWillStart, animationDidEnd, animationDidStop, etc.
+</p>
+</section>
+
+<section>
+<h4>Why WebGL:</h4>
+<p>
+<li>WebGL become more and more popular and it’s quite well supported on most of devices.
+<li>WebGL is a low level graphic API, and it offers all mechanism and flexibility for implementing fast and efficient algorithms
+</p>
+
+I’ve written some notes that explain this engine (it’s quite draft and does not explain everything) on <a href="https://docs.google.com/document/d/1-oTpZB6QdNt53hslE1CBFRRnhcHSRgvntf0ELUV0fC4/edit?usp=sharing">google Doc.</a>
+</section>
+
+
     </article>
     
     
