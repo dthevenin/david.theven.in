@@ -124,7 +124,7 @@ function setTheme (name) {
     previous = null;
   }
   previous = vs.util.importFile (
-    "../../lib/css/vs_ui_" + name + ".css",
+    "../lib/css/vs_ui_" + name + ".css",
     document,
     function () {
       app.refresh ();
