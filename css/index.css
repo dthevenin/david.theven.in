@@ -1,0 +1,104 @@
+div.demos_android {
+  width: 427px;
+  height: 845px;
+  background-image: url("../assets/Android_WVGA800_p.png");
+  background-size: 427px 845px;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  
+  float: left;
+  z-index: 1;
+}
+
+div.demos_android > iframe {
+  width: 360px;
+  height: 576px;
+  position: relative;
+  margin-top: 125px;
+  border: none;
+  margin-top: 125px;
+}
+
+div.demos_ios {
+  width: 379px;
+  height: 797px;
+  background-image: url("../assets/iphone5.png");
+  background-size: 379px 797px;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  
+  float: left;
+  z-index: 1;
+}
+
+div.demos_ios > iframe {
+  width: 320px;
+  height: 568px;
+  position: relative;
+  border: none;
+  margin-top: 118px;
+}
+
+div.demos_big_screen {
+  width: 800px;
+  height: 600px;  
+  float: left;
+  z-index: 1;
+}
+
+div.demos_big_screen > iframe {
+  width: 800px;
+  height: 600px;  
+  position: relative;
+  border: none;
+  margin-top: 50px;
+}
+
+ul.demo_selector {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+ul.demo_selector > li {
+  list-style: none;
+  background-color: #FF6B25;
+  margin: 0 0 8px 0;
+  display: block;
+  width: 150px;
+  padding: 8px;
+  color: white;
+  text-align: center;
+}
+
+ul.demo_selector> li:active {
+  background-color: #a1a6a9;
+  color: rgba(255, 255, 255, 0.75);
+  outline: none;
+}
+
+ul.demo_selector > li:hover {
+  background-color: #cacfd2;
+  color: #ffffff;
+  outline: none;
+}
+
+
+@media (max-width: 620px) {
+  div.demos_ios,
+  div.demos_android {
+    display: none !important;
+  }
+  
+  ul.demo_selector {
+    width: 100%;
+  }
+  
+  ul.demo_selector > li {
+    width: 100%;
+  }
+}
