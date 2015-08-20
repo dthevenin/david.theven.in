@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="David Thevenin">
+
+    <title>IGEL: GL UI</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Theme CSS -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="theme/css/grayscale.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">IGEL</span> HTLM5 demos
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="index.html"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.html">WebGL UI</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="vst.html">ViniSketch Toolkit</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="css3.html">CSS3</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section id="webgl_ui" class="content-section text-center">
+        <div class="demos-section">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="demos_android">
+                      <iframe id="demo_glui" src="glui_demos/ThingsList/index.html"></iframe>
+                    </div>
+                    <div class="" style="margin-top: 70px;">
+                    <ul class="demo_selector">
+                      <li onclick="changeGLUIDemo('ThingsList')">ThingsList</li>
+                      <li onclick="changeGLUIDemo('Cover')">Cover</li>
+                      <li onclick="changeGLUIDemo('OpenCurtain')">Curtain</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/itHMi6xhwhY" frameborder="0" allowfullscreen></iframe>
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/fPVW7v2XM2s" frameborder="0" allowfullscreen></iframe>
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/EJcBee43uB0" frameborder="0" allowfullscreen></iframe>
+    
+    <script>
+    function changeGLUIDemo (name) {
+      var url = "glui_demos/" + name + "/index.html";
+      if (window.innerWidth < 620) {
+        document.location = url;
+      }
+      else {
+        var iframe = document.getElementById ("demo_glui");
+        iframe.src = url;
+      }
+    }
+    function changeTheme (value) {
+      var frame = document.getElementById ("demo_theme");
+      theme_window = frame.contentWindow;
+      theme_window.postMessage ("changetheme#" + value, "*");
+    }
+    </script>
+
+</body>
+
+</html>
