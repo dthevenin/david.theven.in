@@ -11,8 +11,8 @@ var patches = {
  
 var files_to_patch = [
   ["src/introduction.html", "index.html"],
-  ["src/vs_toolkit.html", "vs_toolkit.html"]
-  // ["src/gl_ui.html", "gl_ui.html"]
+  ["src/vs_toolkit.html", "vs_toolkit.html"],
+  ["src/gl_ui.html", "gl_ui.html"]
   // ["src/first_application.html", "first_application.html"],
   // ["src/object_model.html", "object_model.html"],
   // ["src/template.html", "template.html"]
