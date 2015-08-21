@@ -19,7 +19,11 @@ div.demos_android {
   -ms-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
-  
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  transform-origin: 50% 0;
+
   float: left;
   z-index: 1;
 }
@@ -28,9 +32,9 @@ div.demos_android > iframe {
   width: 360px;
   height: 576px;
   position: relative;
-  margin-top: 125px;
   border: none;
   margin-top: 125px;
+  margin-left: 34px;
 }
 
 div.demos_ios {
