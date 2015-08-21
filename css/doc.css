@@ -140,25 +140,29 @@ li {
   list-style-type: disc;
 }
 
-#head_intro {
+.head_intro {
   max-width: none;
   height: 400px;
   background-color: #21242c;
   position: relative;
 }
 
-#head_intro > section {
+.head_intro.gl_ui {
+  height: 320px;
+}
+
+.head_intro > section {
   max-width: 980px;
   position: relative;
   margin: 0 auto;
   color: white;
 }
 
-#head_intro h1 {
+.head_intro h1 {
   color: white;
 }
 
-#head_intro h2 {
+.head_intro h2 {
   color: white;
   border: none;
   font-size: 1.3em;
@@ -166,7 +170,7 @@ li {
   padding: 0px;
 }
 
-#head_intro h3 {
+.head_intro h3 {
   color: white;
   border: none;
   font-size: 1em;
@@ -209,7 +213,7 @@ li {
   opacity: 0.9;
 }
 
-#head_intro img {
+.head_intro img {
   -webkit-transform: rotate(19deg) skew(-18deg, -8deg) scale(1, 0.9);
   -ms-transform: rotate(19deg) skew(-18deg, -8deg) scale(1, 0.9);
   -moz-transform: rotate(19deg) skew(-18deg, -8deg) scale(1, 0.9);

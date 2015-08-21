@@ -1,3 +1,15 @@
+
+header > h1::before {
+  content: url('../assets/avatar3.png');
+  width: 30px;
+  height: 30px;
+  transform: scale(0.3);
+  border-radius: 20px;
+  display: block;
+  margin-bottom: -8px;
+  margin-left: -60px;
+}
+
 div.demos_android {
   width: 427px;
   height: 845px;
