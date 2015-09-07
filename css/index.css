@@ -3,6 +3,9 @@ header > h1::before {
   content: url('../assets/avatar3.png');
   width: 30px;
   height: 30px;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
   transform: scale(0.3);
   border-radius: 20px;
   display: block;
