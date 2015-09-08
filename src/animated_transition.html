@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8'>
-  <title>VSToolkit @ Transition</title>
+  <title>Animated Transition</title>
 __HTML_IMPORT__
   <meta name="viewport" content="initial-scale=1.0,user-scalable=no">
 </head>
@@ -15,14 +15,14 @@ __HEADER__
         theme_window.postMessage (value, "*");
       }
     </script>
-    
-    <article id="head_intro" style="height: auto;padding-bottom: 10px;">
+
+    <article class="toolkit-article">
       <section>
-        <h2>Transition Animation module</h2><br/><h3>is a set of components and functions that
-        allows the developer to create complexes animations.<br/><h3>
-        This module do not aim to replace CSS Animations or the basic VSToolkit
-        animation module.<br/><br/>
-        Its goal is to proposes:
+        <h2>Transition Animation module</h2><h4>is a set of components and functions that
+        allows the developer to create complexes animations.</h4>
+        This study do not aim to replace CSS Animations.<br/>
+        <p>
+         Its goal is to proposes:
         <ul>
           <li>enough expressivity to allow fine tuning animations
           <li>to animate any kind of component's property (an array, a string, ...)
@@ -34,10 +34,13 @@ __HEADER__
         <ul>
           <li>Chronometer; a periodical signal (tick) generator
           <li>Pace; implements a function in the range [0,1] to [0,1]. Useful to implement for instance an EaseIn transformation
-          <li>Trajectory; an component with one input in, and any number of outputs, for transforming a time into the value of a component's property
+          <li>Trajectory; an component with one input in, and any number of outputs, for transforming an input [0,1] into the value of a component's property
         </ul><br/>
         The object model and APIs were strongly influenced by this <a href="https://www.eurocontrol.int/eec/public/standard_page/proj_CARE_INO_II_ANIMS.html">public work</a>.
+        </p>
       </section>
+  
+      <hr />      
     </article>
 
     <article style="padding-bottom: 10px;">
@@ -59,7 +62,8 @@ var traj = new vs.ext.fx.Vector2D ({values: [[100, 100], [220, 50], [100, 100]]}
 var view = new vs.ui.View ({id: "my_view"}).init ();   
 
 // connect your components within the default dataflow
-chrono.connect ("tick").to (traj, "tick")
+chrono
+  .connect ("tick").to (traj, "tick")
   .connect ("out").to (view, "size");
 
 // build the default dataflow
@@ -76,7 +80,7 @@ chrono.start ();
     <article style="padding-bottom: 10px;">
       <h1>Attach an animation to a property</h1>
       <br />
-      This demo show how to instrument a component property.<br/ >
+      This demo shows how to instrument a component property.<br/ >
       On the property change, the value is animated along a trajectory.<br/ ><br/ >
       Write (or copy) a text into the textarea.
       On blur event the text is animated.
