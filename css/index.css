@@ -13,6 +13,65 @@ header > h1::before {
   margin-left: -60px;
 }
 
+#main_presentation {
+  margin-top: 100px;
+}
+
+#main_presentation h2 {
+  padding-top: 30px;
+  font-size: 1.4em;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  line-height: 1.1em;
+}
+
+#main_presentation p {
+  margin: 0;
+  text-align: justify;
+  line-height: 1.4em;
+}
+
+#main_photo {
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-top: 100px;
+  margin-right: 40px;
+  border: 2px solid #333
+}
+
+#main_photo > img {
+  margin-left: -65px;
+}
+
+#main_photo .intro {
+  margin: 20px 0 50px 0;
+}
+
+ul.download {
+  float: right;
+  padding-right: 140px;
+}
+
+ul.download li {
+  list-style-type: none;
+  background-color: #FF6B25;
+  margin: 15px 5px 0 0;
+  display: inline;
+  width: 120px;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  padding-right: 25px;
+}
+
+ul.download li:hover {
+  background-color: #cacfd2;
+  color: #ffffff;
+  outline: none;
+}
+
 div.demos_android {
   width: 427px;
   height: 845px;
