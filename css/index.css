@@ -20,8 +20,8 @@ header > h1::before {
 #main_presentation h2 {
   padding-top: 30px;
   font-size: 1.4em;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
+  border-bottom: none;
+  margin-bottom: 30px;
   line-height: 1.1em;
 }
 
@@ -36,8 +36,7 @@ header > h1::before {
   width: 200px;
   height: 300px;
   float: left;
-  margin-top: 100px;
-  margin-right: 40px;
+  margin: 100px 40px 1000px 0;
   border: 2px solid #333
 }
 
@@ -45,8 +44,8 @@ header > h1::before {
   margin-left: -65px;
 }
 
-#main_photo .intro {
-  margin: 20px 0 50px 0;
+.intro {
+  margin: 30px 0 50px 0;
 }
 
 ul.download {
@@ -70,6 +69,10 @@ ul.download li:hover {
   background-color: #cacfd2;
   color: #ffffff;
   outline: none;
+}
+
+ul.download li a {
+  color: white;
 }
 
 div.demos_android {
