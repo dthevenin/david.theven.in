@@ -11,6 +11,7 @@ var patches = {
  
 var files_to_patch = [
   ["src/introduction.html", "index.html"],
+  ["src/vsd.html", "vsd.html"],
   ["src/vs_toolkit.html", "vs_toolkit.html"],
   ["src/gl_ui.html", "gl_ui.html"],
   ["src/animated_transition.html", "animated_transition.html"],
