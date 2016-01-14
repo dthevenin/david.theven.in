@@ -15,6 +15,7 @@ header > h1::before {
 
 #main_presentation {
   margin-top: 100px;
+  height: 100%;
 }
 
 #main_presentation h2 {
@@ -31,17 +32,41 @@ header > h1::before {
   line-height: 1.4em;
 }
 
+#main_presentation > section {
+  position: relative;
+  height: 100%;
+}
+
+#main_presentation > section > div:nth-child(1) {
+  position: absolute;
+  width: 204px;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#main_presentation > section > div:nth-child(2) {
+  position: absolute;
+  width: auto;
+  overflow: hidden;
+  left: 220px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
 #main_photo {
   overflow: hidden;
-  width: 200px;
   height: 300px;
-  float: left;
-  margin: 100px 40px 1000px 0;
+  width: 200px;
   border: 2px solid #333
 }
 
 #main_photo > img {
   margin-left: -65px;
+  width: 300px;
+  height: 300px;
 }
 
 .intro {
@@ -50,7 +75,6 @@ header > h1::before {
 
 ul.download {
   float: right;
-  padding-right: 140px;
 }
 
 ul.download li {
