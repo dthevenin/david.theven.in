@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url('/assets/font/roboto-light.woff') format('woff');
+  src: url('assets/font/roboto-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -11,12 +11,9 @@ body {
   color: rgb(51, 51, 51);
   font-size: 16px;
   background-color: white;
-//  background-image: url("/images/background.png");
   background-repeat: repeat-x repeat-y;
   font-family: Roboto-Light, Arial, Tahoma, sans-serif;
 }
-
-
 
 .row {
   margin-right: -15px;
