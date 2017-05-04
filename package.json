@@ -1,0 +1,34 @@
+{
+  "name": "web_site",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "6.18.2",
+    "babel-preset-es2015": "6.18.0",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "gh-pages": "~0.12.0",
+    "less": "^2.7.2"
+  },
+  "scripts": {
+    "prebuild": "mkdir -p ./web && rsync -aP --exclude '*.htm' ./src/ ./web",
+    "build": "node gen_site.js",
+    "predeploy": "npm run build && cp CNAME ./web",
+    "deploy": "gh-pages -d web"
+  },
+  "babel": {
+    "plugins": [
+      [ "transform-es2015-modules-amd" ]
+    ],
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "David Thevenin",
+  "license": "ISC"
+}
